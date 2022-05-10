@@ -12,6 +12,7 @@ import java.util.Scanner;
 /**
  *
  * @author Paco
+ * //Carmen Sanchez Caballero
  */
 public class DesdeFichero {
 
