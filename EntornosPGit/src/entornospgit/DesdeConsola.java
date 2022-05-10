@@ -21,62 +21,34 @@ public class DesdeConsola {
         f = new File("Fichero.txt");
     }
 
-    public void maximo() {
+    public void maxMinC() {
         //variables
-        int max = 0, num = 0;
-
-        //selecciono la ruta
-        try {
-            if (!f.exists()) {
-                throw new FileNotFoundException();
+        int max = 0, min=32767, num = 0;
+        int numero=0;
+        
+        while(numero!=-1){
+            System.out.println("Introduce numeros, cuando quieras parar introduce un -1");
+            Scanner numIn= new Scanner(System.in);
+            numero=numIn.nextInt();
+            //compruebo maximo
+            if(numero>max){
+                max=numero;
             }
-
-            Scanner rd = new Scanner(f);
-            while (rd.hasNext()) {
-                num = rd.nextInt();
-                if (max < num) {
-                    max = num;
-                }
-
+            if (numero<min){
+                min=numero;
             }
-            System.out.println("El mayor es " + max);
-            rd.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("Error: El fichero no existe");
-        } catch (Exception e) {
-            System.out.println(e);
+            
         }
+        System.out.println("El máximo es "+ max);
+        System.out.println("El mínimo es "+ min);
+        
         
 
     }
 
-    public void minimo() {
-        //insertar codigo para mostrar mínimo ---------------
-        //variables
-        int min = 0, num = 1000000000;
-        //selecciono la ruta
-        try {
-            if (!f.exists()) {
-                throw new FileNotFoundException();
-            }
-
-            Scanner rd = new Scanner(f);
-            while (rd.hasNext()) {
-                num = rd.nextInt();
-                if (min > num) {
-                    min = num;
-                }
-
-            }
-            System.out.println("El menor es " + min);
-            rd.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("Error: El fichero no existe");
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+   
         
-    }
+    
 }
 
 
