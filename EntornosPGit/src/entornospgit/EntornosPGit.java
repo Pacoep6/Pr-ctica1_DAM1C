@@ -16,6 +16,7 @@ public class EntornosPGit {
     /**
      * @param args the command line arguments
      */
+    //Prueba 1
     public static void main(String[] args) {
         int selec = 0;
         Scanner sc = new Scanner(System.in);
@@ -36,6 +37,8 @@ public class EntornosPGit {
             case 2:
                 //HACER CLASE QUE PERMITA METER NUMS DESDE CONSOLA!!!-----------------
                 //y codificar aquí la llamada a método máximo y mínimo----------------
+                Consola c1 = new Consola();
+                c1.maximo();
                 break;
             default:
                 System.out.println("Saliendo...");
