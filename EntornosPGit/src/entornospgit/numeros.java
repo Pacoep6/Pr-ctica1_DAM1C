@@ -22,7 +22,7 @@ public class numeros {
             if(num>max && num!=-1){
                 max=num;
             }            
-        } while (num==-1);
+        } while (num!=-1);
         System.out.println("El mayor es " + max);            
     }
      
@@ -37,7 +37,7 @@ public class numeros {
             if(num<min && num!=-1){
                 min=num;
             }            
-        } while (num==-1);
+        } while (num!=-1);
         System.out.println("El menor es " + min);  
      }
 }
