@@ -5,7 +5,7 @@
 package entornospgit;
 
 import java.util.Scanner;
-
+//Comentario para el punto 10
 /**
  *
  * @author admin
