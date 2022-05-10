@@ -8,9 +8,10 @@ import java.util.Scanner;
 
 /**
  *
- * @author admin
+ * @author Ronal Arrayaza
  */
 public class numeros {
+    //Lectura de variables desde consola
      public void maximo() {
         //variables
         int max = 0, num = 0;       
