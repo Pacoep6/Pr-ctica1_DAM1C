@@ -23,18 +23,18 @@ public class Consola {
     
     public void maximo(){
         if(num1<num2){
-            System.out.println("Num2 es mayor");
+            System.out.println("El segundo numero es mayor");
         }else{
-            System.out.println("Num1 es menor");
+            System.out.println("El primer numero es mayor");
         }
     }
     
-    
-    
-      
-
-    
-    
-
+    public void minimo(){
+        if(num1>num2){
+            System.out.println("El segundo numero es menor");
+        }else{
+            System.out.println("El primer numero es menor");
+        }
+    }
     
 }
