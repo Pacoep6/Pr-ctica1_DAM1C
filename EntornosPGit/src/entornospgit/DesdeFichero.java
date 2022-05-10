@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class DesdeFichero {
 
     private static File f;
-
+    // comentario realizado por Ronal
     DesdeFichero() {
         f = new File("Fichero.txt");
     }
@@ -52,8 +52,13 @@ public class DesdeFichero {
 
     public void minimo() {
         //insertar codigo para mostrar mínimo ---------------
+<<<<<<< HEAD
         //variables
         int min = 0, num = 1000000000;
+=======
+        int min = 0, num = 0;
+
+>>>>>>> 58c6102290338fd7af9874b09d140312110afd98
         //selecciono la ruta
         try {
             if (!f.exists()) {
@@ -75,7 +80,10 @@ public class DesdeFichero {
         } catch (Exception e) {
             System.out.println(e);
         }
+<<<<<<< HEAD
         
+=======
+>>>>>>> 58c6102290338fd7af9874b09d140312110afd98
     }
 }
 
