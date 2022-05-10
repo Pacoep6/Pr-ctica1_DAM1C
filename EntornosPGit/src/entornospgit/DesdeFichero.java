@@ -53,6 +53,29 @@ public class DesdeFichero {
 
     public void minimo() {
         //insertar codigo para mostrar mínimo ---------------
+         //selecciono la ruta
+        int min=999999999;
+        int num=0;
+        try {
+            if (!f.exists()) {
+                throw new FileNotFoundException();
+            }
+
+            Scanner rd = new Scanner(f);
+            while (rd.hasNext()) {
+                num = rd.nextInt();
+                if (min > num) {
+                    min = num;
+                }
+
+            }
+            System.out.println("El minimo es " + min);
+            rd.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("Error: El fichero no existe");
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }
 
