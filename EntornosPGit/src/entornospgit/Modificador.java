@@ -13,6 +13,7 @@ package entornospgit;
 public class Modificador {
 
     //elimina esta clase, sobra
+    //aquí modificaremos cosas
 }
 
 
