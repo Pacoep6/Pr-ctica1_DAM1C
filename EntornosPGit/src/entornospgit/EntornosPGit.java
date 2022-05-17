@@ -9,7 +9,8 @@ import java.util.Scanner;
 /**
  * El programa mostrará los máximos y mínimos
  *
- * @author PACO
+ * @author Ian
+ * Comentario del punto 10
  */
 public class EntornosPGit {
 
