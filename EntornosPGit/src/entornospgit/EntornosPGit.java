@@ -35,6 +35,7 @@ public class EntornosPGit {
                 break;
 
             case 2:
+
                 //HACER CLASE QUE PERMITA METER NUMS DESDE CONSOLA!!!----------------
                 Scanner Scan = new Scanner(System.in);
                 NumRecolector rec = new NumRecolector();
@@ -48,6 +49,7 @@ public class EntornosPGit {
                 //y codificar aquí la llamada a método máximo y mínimo----------------
                 System.out.println(Long.toString(rec.getMax()));
                 System.out.println(Long.toString(rec.getMin()));
+
                 break;
             default:
                 System.out.println("Saliendo...");
