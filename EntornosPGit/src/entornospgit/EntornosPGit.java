@@ -13,6 +13,7 @@ import java.util.Scanner;
  * Comentario del punto 10
  */
 public class EntornosPGit {
+        
 
     /**
      * @param args the command line arguments
@@ -36,10 +37,19 @@ public class EntornosPGit {
 
             case 2:
 
-                //HACER CLASE QUE PERMITA METER NUMS DESDE CONSOLA!!!-----------------
+                //HACER CLASE QUE PERMITA METER NUMS DESDE CONSOLA!!!----------------
+                Scanner Scan = new Scanner(System.in);
+                NumRecolector rec = new NumRecolector();
+                String res = "";
+                while(true){
+                    System.out.println("Ingrese un numero (exit para salir)");
+                    res = Scan.nextLine();
+                    if("exit".equals(res)) break;
+                    rec.AddNum(Long.parseLong(res));
+                }
                 //y codificar aquí la llamada a método máximo y mínimo----------------
-                DesdeConsola con= new DesdeConsola();
-                con.maxMinC();
+                System.out.println(Long.toString(rec.getMax()));
+                System.out.println(Long.toString(rec.getMin()));
 
                 break;
             default:
